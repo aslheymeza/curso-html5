@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <script src="/index.js" defer></script>
     <style>
         body {
             font-family: "Lucida Console", "Courier New", monospace;
@@ -94,7 +95,7 @@
             clear: both;
         }
     </style>
-    <script src="/index.js"></script>
+
 </head>
 
 <body>
@@ -112,9 +113,9 @@
     <div class="contenedor-formulario">
         <form>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre" >
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre">
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" placeholder="Ingrese Apellido" >
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese Apellido">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Ingrese email">
             <label for="pais">Pais:</label>
@@ -131,10 +132,12 @@
             <input type="radio" id="motivo" name="motivo"><i>Personal</i>
             <input type="radio" id="motivo" name="motivo"><i>Grupo de Trabajo</i>
             <input type="radio" id="motivo" name="motivo"><i>Referencia</i>
-            <input type="submit" value="Enviar" id="Enviar" onclick=Calcular()>
+            <input type="submit" value="Enviar" id="Enviar" onclick=calcular()>
+            
         </form>
     </div>
-
+    <p>Resultado: </p>
+    <p id="resultado"></p>
 
     <footer class="footer">
         <p>Derechos reservados &copy; 2023</p>
