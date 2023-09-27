@@ -1,1 +1,6 @@
-console.log("Hola")
+
+
+function Calcular(){
+console.log("Hola Cris")
+
+}
